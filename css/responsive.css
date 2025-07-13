@@ -1,0 +1,334 @@
+/* mobile */
+@media screen and (max-width: 1024px){
+    #top_header{
+        min-width: 360px;
+		height: 7vh;
+		align-items: center;
+    }
+
+	#main_header{
+        min-width: 360px;
+		height: unset;
+		padding-bottom: 90px;
+    }
+
+	.contact a{
+		display: block;
+		margin-right: 0;
+	}
+
+	.social{
+		margin-top: 10px;
+	}
+
+	#logo{
+		text-align: center;
+		width: 100%;
+	}
+
+	#logo img{
+		float: unset;
+		margin-top: 50px;
+	}
+
+    #navbar{
+        display: none;
+    }
+
+    #hamburger {
+        overflow: hidden;
+        position: relative;
+		margin-top: 15px;
+    }
+      
+    #hamburger #hamLinks {
+        display: none;
+        background-color: rgb(49,200,220, 60%);
+        margin-top: 45px;
+		float: right;
+		width: 54%;
+		border-radius: 10px;
+    }
+      
+    #hamburger a.ham-link {
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+	#hamburger a.ham-link:focus{
+		color: #fff;
+	}
+
+	#hamburger a.ham-link:hover {
+        color: #fff;
+    }
+
+	#hamburger li{
+		border-bottom: 1px solid rgb(40,187,207, 60%);
+	}
+
+	#hamburger li:last-child{
+		border-bottom: unset;
+	}
+
+	#hamburger li:hover{
+		/* background-color: #28bbcf; */
+		background-color: rgb(40,187,207, 60%);
+	}
+
+	#hamburger li:first-child:hover{
+		border-radius: 10px 10px 0 0;
+	}
+
+	#hamburger li:last-child:hover{
+		border-radius: 0 0 10px 10px;
+	}
+
+    #hamburger a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+		color: #fff;
+    }
+
+    #hamburger .icon{
+        font-size: 25px;
+    }
+
+    #hamburger :where(.shopping_cart, .login){
+		float: left;
+    }
+
+	#hamburger .shopping_cart a{
+        color: #fff;
+    }
+
+	#slider_box{
+        margin-top: 0;
+    }
+
+	#slider img{
+		width: 100px;
+		height: 100px;
+		margin-top: 260px;
+	}
+
+	.carousel_text{
+		top: 0;
+		width: 100%;
+	}
+
+	.shop_now{
+		margin-top: 35px;
+	}
+
+    #about, #services, #store, #our_blog, #discount, footer{
+        padding: 0 20px;
+    }
+
+	#about{
+		border-left: unset;
+	}
+
+	#about img{
+        width: 100%;
+        object-fit: cover;
+		margin-bottom: 15px;
+    }
+
+	#services{
+		flex-direction: column;
+		margin: 10vh auto;
+	}
+
+	#services div{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#store p{
+		width: 100%;
+	}
+
+	#products{
+		flex-direction: column;
+	}
+
+	#products .box_product{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#quote{
+		min-height: 64vh;
+	}
+
+	#testimonials{
+		padding: 30px 0 65px;
+	}
+
+	#testimonials .carousel-item{
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 20px 0 0;
+	}
+
+	#testimonials .carousel-indicators{
+		margin-bottom: 0;
+	}
+
+	#testimonials :where(.carousel-control-prev, .carousel-control-next){
+		display: none;
+	}
+
+	#our_blog p{
+		width: 100%;
+	}
+
+	#blog{
+		flex-direction: column;
+	}
+
+	#blog .box_blog{
+		width: 100%;
+		margin-bottom: 20px;
+		margin-left: 0;
+	}
+
+	#blog .box_blog:last-child{
+		margin-bottom: 0;
+	}
+
+	#discount{
+		margin-bottom: 10vh;
+	}
+
+	#discount img{
+		margin-left: 0;
+	}
+
+	#discount h2{
+		margin-top: 15px;
+	}
+
+	#subscribe form input{
+		width: 100%;
+	}
+
+	footer .row{
+		flex-direction: column;
+	}
+
+	footer .box_footer{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	footer .box_footer:last-child{
+		margin-bottom: 0;
+	}
+
+	footer .box_footer h4{
+		margin-bottom: 10px;
+	}
+
+	#copyright{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	#copyright div:first-child p{
+		text-align: center;
+	}
+
+	#copyright div:first-child{
+		margin: 10px 0 20px;
+	}
+
+	#subscribe{
+		height: 28vh;
+	}
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #top_header{
+		height: 14vh;
+	}
+
+	#main_header{
+		height: unset;
+		padding-bottom: 60px;
+	}
+
+	#slider img{
+		width: 200px;
+		height: 200px;
+		margin-top: 130px;
+	}
+
+	#services{
+		flex-direction: row;
+		margin: 20vh auto 15vh;
+	}
+
+	#products img{
+		object-fit: contain;
+	}
+
+	#store{
+		margin-bottom: 20vh;
+	}
+
+	#quote, #our_blog, #discount{
+		margin-bottom: 15vh;
+	}
+
+	#testimonials{
+		padding: 30px 0 95px;
+	}
+
+	#testimonials .carousel-indicators{
+		margin-bottom: 30px;
+	}
+
+	#blog .box_blog img{
+		object-fit: cover;
+	}
+
+	#discount img{
+		object-fit: cover;
+	}
+
+	#subscribe{
+		height: 60vh;
+	}
+
+	footer .row{
+		flex-direction: row;
+	}
+
+	footer .box_footer{
+		width: 23%;
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 1025px){
+    #hamburger{
+        display: none;
+    }
+}
+
+/* large desktop */
+@media screen and (min-width: 1400px) {
+    #testimonials .carousel-item{
+        left: 293px !important;
+    }
+}
